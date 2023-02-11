@@ -104,7 +104,7 @@ p {
 /* Index.html */
 
 .welcome {
-	background-image: url("");
+	background-image: url("Pictures/index-header_image.jpg");
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -213,21 +213,21 @@ form .submit {
 /* art gallery */
 .gallery-section-1 {
 	background-color: #59ccee;
-	float:center;
+	float:left;
 	margin: 20px;
 	padding: 20px;
 }
 
 .gallery-section-2 {
 	background-color: #555fd3;
-	float: center;
+	float: left;
 	margin: 20px;
 	padding: 20px;
 	color: white;
 }
 .gallery-section-3 {
 	background-color: #140959;
-	float: center;
+	float: left;
 	margin: 20px;
 	padding: 20px;
 	color: white;
@@ -255,7 +255,7 @@ form .submit {
 }
 
 .organized-gallery {
-	float: center;
+	float: left;
 	width: 100%;
 }
 
