@@ -1,45 +1,81 @@
-<html lang="en">
-  <head>
-    <title>Star Explorer Space Tours</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body style="background-color: gray;"></body>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald&display=swap" rel="stylesheet">
+  <title>Price Packages</title>
+
 </head>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business website</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <style>
-            .borderexample {
-             border-width:1px;
-             border-style:solid;
-             border-color:#000000;
-             width: 100%;
-             height: auto;
-             padding: 0px;
-             display: inline-block;
-             width: auto;
-             list-style: outside none none;
-             white-space: nowrap;
-             overflow-x: auto;
-             margin: 30px;
 
-            }
-            </style>  
-                <a href="index.html", class="borderexample">Homepage</a>
-                <a href="aboutUs.html", class="borderexample">About Us</a>
-                <a href="planning-training.html", class="borderexample">Planning</a>
-                <a href="vehicles-safety.html", class="borderexample">Safety</a>
-                <a href="sources.html", class="borderexample">Sources</a>
+<body>
+  <!-- Nav bar -->
+  <div class = "header">
+    <div class="navbar">
+      <a href="index.html", class="borderexample">Homepage</a>
+      <a href="aboutUs.html", class="borderexample">About Us</a>
+      <a href="planning-training.html", class="borderexample">Planning</a>
+      <a href="vehicles-safety.html", class="borderexample">Safety</a>
+      <a href="sources.html", class="borderexample">Sources</a>
+    </div>
+  </div>
+  <div id="main">
+    <div class="services"></div>
+    <hr>
+    <h1>Available Packages</h1>
+    <p>As an aspiring astronaut, you may be asking yourself “wow this sounds great and all, but it will be expensive”. Here at Walk The Stars, we have different packages that can accommodate many different budgets. We have 3 pricing packages, each with its own unique benefits.</p>
+    <div class="tab">
+      <button class="tablinks" onclick="workTabs(event, 'Express')" id="defaultOpen">Express</button>
+      <button class="tablinks" onclick="workTabs(event, 'Premium')">Premium</button>
+      <button class="tablinks" onclick="workTabs(event, 'Executive')">Executive</button>
+    </div>
+    <div id="Express" class="tabcontent">
+      <h2>Express</h2>
+      <h3>$199,999.99 USD</h3>
+      <div class="gallery-section-2">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/586059/pexels-photo-586059.jpeg" width=50% height=50%>
+        </div>
+        <div class="event">
+          <p>The express package offers the opportunity to go to space when you are trying to get the most value for your money. The express package starts at $199,999.99 USD. The express package includes the standard course, as well as a refresher course before liftoff. </p>
+          <p>While in the spacecraft, the standard seating includes armrests, plenty of legroom, a reading light, as well as a pressurized cabin with bunks that has single-zone climate control. In space, you will be able to experience a spacewalk (in a small group) and take in the full thrill of the endless wonders of space. </p>
+        </div>
+      </div>
 
-</nav>
-    </header>
-    <h2>Price</h2>
-    <p>Prices vary depending on the package chosen. Basic package includes training, travel, and accommodation in orbit. Additional options such as extended stays, research opportunities, and private spacecraft rental are available. Contact us for a personalized quote.</p>
-  </body>
+    </div>
+    <div id="Premium" class="tabcontent">
+      <h2>Premium</h2>
+      <h3>$299,999.99 USD</h3>
+      <div class="gallery-section-1">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/586042/pexels-photo-586042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width=50% height=50%>
+        </div>
+        <div class="event">
+          <p>The premium package offers a great middle ground for those who are looking to experience the luxuries that many astronauts experience for space without breaking the bank. The premium package starts at $299,999.99 USD. </p>
+          <p>This package includes all of the same amenities as the express package, as well as a central commons area with recreational activities, individual rooms for passengers with climate control and computers, leather seating arrangements for launch, as well as individual spacewalks.</p>
+          <p>For the training course, the premium package includes the standard course, a refresher course, as well as being able to meet the captain and crew who will be with you on your journey. </p>
+        </div>
+      </div>
+      <p></p>
+    </div>
+    <div id="Executive" class="tabcontent">
+      <h2>Executive</h2>
+      <h3>$499,999.99 USD</h3>
+      <div class="gallery-section-2">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/4400287/pexels-photo-4400287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width=30% height=30%>
+        </div>
+        <div class="event">
+          <p>The executive package offers the fullest extent of comfort that is available to those who are looking for the ultimate space experience. The executive package is all inclusive at $499,999.99.</p>
+          <p>This all inclusive package offers all the features of the previous packages, as well as an upgraded personalized room with a full panoramic view out towards space, individual spa, upgraded computer systems which can send messages to earth in under 60 seconds, and an exclusive bed that has heat, ventilation, and massage features. </p>
+          <p>The executive package also gives you access to the executive lounge, which has many features such as a special food selection that is tailored to your journey, live performances by artists onboard the ship, as well as a zero-gravity chamber for those who don’t prefer to go out into space.</p>
+          <p>For your instruction course, you will have the standard course, as well as a 2 week long refresher course, personal theme selections for your room, personal dietary preferences, and the option to meet the pilots and have an active piloting simulation.</p>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
