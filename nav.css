@@ -161,10 +161,10 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555fd3;
+  background: #140959;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #59ccee;
+  background: #555fd3;
 }
