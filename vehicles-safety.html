@@ -1,45 +1,81 @@
-<html lang="en">
-  <head>
-    <title>Star Explorer Space Tours</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body style="background-color: gray;"></body>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald&display=swap" rel="stylesheet">
+  <title>Price Packages</title>
+
 </head>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business website</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <style>
-            .borderexample {
-             border-width:1px;
-             border-style:solid;
-             border-color:#000000;
-             width: 100%;
-             height: auto;
-             padding: 0px;
-             display: inline-block;
-             width: auto;
-             list-style: outside none none;
-             white-space: nowrap;
-             overflow-x: auto;
-             margin: 30px;
 
-            }
-            </style>  
-                <a href="index.html", class="borderexample">Homepage</a>
-                <a href="aboutUs.html", class="borderexample">About Us</a>
-                <a href="cost.html", class="borderexample">Cost</a>
-                <a href="planning-training.html", class="borderexample">Planning</a>
-                <a href="sources.html", class="borderexample">Sources</a>
+<body>
+  <!-- Nav bar -->
+  <div class = "header">
+    <div class="navbar">
+      <a href="index.html", class="borderexample">Homepage</a>
+      <a href="aboutUs.html", class="borderexample">About Us</a>
+      <a href="cost.html", class="borderexample">Cost</a>
+      <a href="vehicles-safety.html", class="borderexample">Safety</a>
+      <a href="sources.html", class="borderexample">Sources</a>
+    </div>
+  </div>
+  <div id="main">
+    <div class="services"></div>
+    <hr>
+    <h1>Vehicles and Safety</h1>
+    <p>Walk The Stars is dedicated to the safety of everyone who boards their ships, no shortcuts, we are doing this the hard way. We protect the customer from the start of their reservation by not tracking data or banking information, as well as multi-level encryption for our servers. We ensure our crew and staff are up to date on safety protocols and certifications, as well as getting mandatory training once a year. We also ensure that our passenger’s spacesuits are durable and tested before liftoff through an extensive quality test. Our rockets are entered into extensive safety tests and are approved by NASA before liftoff, as well as receiving NASA’s approval for the overall design and functionality of the rocket. During the development of our rovers, the work that goes into developing the nuclear reactor is done by trained professionals who are well-equipped and experienced for the task. </p>
+    <p>Worker safety is of utmost importance to Walk The Stars, and we ensure our employees are well taken care of. We provide our workers with extensive protection and a workplace environment approved by OSHA, as well as regular safety checks to ensure the safety of everyone involved. We accommodate our employees with extensive benefits that are customized to the occupation that they hold. For our basic coverage, we offer full dental and medical, 3 weeks of paid leave,  equipment needed to work remotely, as well as discounts on things such as online subscriptions.</p>
+    <h1>Spacecraft Directory</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="workTabs(event, 'COW')" id="defaultOpen">C.O.W</button>
+      <button class="tablinks" onclick="workTabs(event, 'Breacher')">Breacher</button>
+      <button class="tablinks" onclick="workTabs(event, 'Rovers')">Rovers</button>
+    </div>
+    <div id="Express" class="tabcontent">
+      <h2>C.O.W</h2>
+      <h3>Exploration and Command Spacecraft</h3>
+      <div class="gallery-section-2">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/586059/pexels-photo-586059.jpeg" width=50% height=50%>
+        </div>
+        <div class="event">
+          <p>The express package offers the opportunity to go to space when you are trying to get the most value for your money. The express package starts at $199,999.99 USD. The express package includes the standard course, as well as a refresher course before liftoff. </p>
+          <p>While in the spacecraft, the standard seating includes armrests, plenty of legroom, a reading light, as well as a pressurized cabin with bunks that has single-zone climate control. In space, you will be able to experience a spacewalk (in a small group) and take in the full thrill of the endless wonders of space. </p>
+        </div>
+      </div>
 
-</nav>
-    </header>
-    <h2>vehicles and Safety</h2>
-    <p>Vehicles</p>
-  </body>
+    </div>
+    <div id="Premium" class="tabcontent">
+      <h2>Breacher</h2>
+      <h3>Commercial Passenger Spacecraft</h3>
+      <div class="gallery-section-1">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/586042/pexels-photo-586042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width=50% height=50%>
+        </div>
+        <div class="event">
+          <p>The premium package offers a great middle ground for those who are looking to experience the luxuries that many astronauts experience for space without breaking the bank. The premium package starts at $299,999.99 USD. </p>
+          <p>This package includes all of the same amenities as the express package, as well as a central commons area with recreational activities, individual rooms for passengers with climate control and computers, leather seating arrangements for launch, as well as individual spacewalks.</p>
+          <p>For the training course, the premium package includes the standard course, a refresher course, as well as being able to meet the captain and crew who will be with you on your journey. </p>
+        </div>
+      </div>
+      <p></p>
+    </div>
+    <div id="Executive" class="tabcontent">
+      <h2>Rovers</h2>
+      <h3>Small data analysis vehicles</h3>
+      <div class="gallery-section-2">
+        <div class="event">
+          <img src="https://images.pexels.com/photos/4400287/pexels-photo-4400287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width=30% height=30%>
+        </div>
+        <div class="event">
+          <p>The Jumper Rover is A high-durability rover that “jumps” from palace to place rather than your traditional wheels. The jumping mechanism The Jumper rover uses a miniaturized nuclear reactor that can provide up to 20 years of energy for the rover to operate. </p>
+          <p>Designed to be deployed multiple at a time, the Tear is a rover that is equipped with material collection, material storage, and high stability short-range antennas which communicate with the C.O.W. spacecraft or any other long-range communications.</p>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
