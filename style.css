@@ -196,7 +196,7 @@ form .submit {
 }
 
 .tab button:hover{
-	background:rgba(89, 204, 238,.9);
+	background:rgba(143, 107, 228, 0.9);
 }
 .tab button.active{
 	background: #555fd3;
