@@ -79,6 +79,25 @@
         </div>
       </div>
     </div>
+    <script>
+      function workTabs(evt, service){
+        var x, tabcontent, tablinks;
+  
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for(x=0;x<tabcontent.length;x++){
+          tabcontent[x].style.display="none";
+        }
+  
+        tablinks = document.getElementsByClassName("tablinks");
+        for(x=0;x<tablinks.length;x++){
+          tablinks[x].className = tablinks[x].className.replace(" active","");
+        }
+  
+        document.getElementById(service).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>
