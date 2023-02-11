@@ -213,21 +213,21 @@ form .submit {
 /* art gallery */
 .gallery-section-1 {
 	background-color: #59ccee;
-	float:left;
+	float:center;
 	margin: 20px;
 	padding: 20px;
 }
 
 .gallery-section-2 {
 	background-color: #555fd3;
-	float: left;
+	float: center;
 	margin: 20px;
 	padding: 20px;
 	color: white;
 }
 .gallery-section-3 {
 	background-color: #140959;
-	float: left;
+	float: center;
 	margin: 20px;
 	padding: 20px;
 	color: white;
