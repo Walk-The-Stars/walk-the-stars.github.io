@@ -235,7 +235,7 @@ form .submit {
 .gallery-section-2 {
 	background-color: #8044c4;
 	text-align: center;
-	font-size: 24 px;
+	font-size: 24 px !important;
 	float: left;
 	margin: 20px;
 	padding: 20px;
