@@ -230,8 +230,18 @@ form .submit {
 	padding: 20px;
 	color: white;
 }
+.gallery-section-4 {
+	background-color: #8044c4;
+	text-align: right;
+	float: left;
+	margin: 20px;
+	padding: 20px;
+	color: white;
+}
+
 .gallery-section-3 {
 	background-color: #140959;
+	text-align: center;
 	float: left;
 	margin: 20px;
 	padding: 20px;
