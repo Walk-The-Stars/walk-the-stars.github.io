@@ -181,7 +181,7 @@ form .submit {
 
 
 .tab {
-	overflow:hidden;
+	overflow:visible;
 	display: flex;
 	size: 1200px;
 	background: #140959;
