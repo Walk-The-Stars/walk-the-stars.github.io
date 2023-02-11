@@ -72,7 +72,7 @@ a:active {
 }
 
 p {
-	font-size: 24;
+	font-size: 24 !important;
 	padding-left: 30px;
 	padding-right: 30px;
 }
