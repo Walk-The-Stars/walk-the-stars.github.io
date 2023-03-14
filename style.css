@@ -445,3 +445,11 @@ hr {
 		text-align: center;
 	}
 }
+/* Links for sources*/
+.multipleLinks {
+  width: 100%;
+  top:20;
+  text-align: left;
+  font-size: 25px;
+  padding-left: 25px;
+}
