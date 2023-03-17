@@ -566,5 +566,6 @@ hr {
 	justify-content: center;
 	text-align: center; /* Centers the elements vertically */
 	align-items: center; /* Optional: centers the elements vertically as well */
+	color: #00ffaa;
   }
   
