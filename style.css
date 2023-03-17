@@ -460,6 +460,7 @@ hr {
 	background: var(--primary-color);
 	margin: 0 auto;
 	padding: 20px;
+	
   }
   
   /* Card container */
@@ -560,3 +561,10 @@ hr {
   .card:nth-child(even) > .info > .titlecard::before {
 	right: -45px;
   }
+.footer {
+	display: flex;
+	justify-content: center;
+	text-align: center; /* Centers the elements vertically */
+	align-items: center; /* Optional: centers the elements vertically as well */
+  }
+  
