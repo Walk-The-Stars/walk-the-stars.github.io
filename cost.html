@@ -80,6 +80,34 @@
         </div>
       </div>
     </div>
+
+    <h2>Price Configurator</h2> 
+    <body>
+
+      <p>Display some text when the checkbox is checked:</p>
+      
+      <label for="myCheck">Checkbox:</label> 
+      <input type="checkbox" id="myCheck" onclick="boxClicker('myCheck')">
+      
+      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+      
+      <label for="myCheck2">Checkbox:</label> 
+      <input type="checkbox" id="myCheck2" onclick="boxClicker('myCheck2')">
+      
+      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+      <script>
+      function boxClicker(element) {
+        var checkBox = document.getElementById(element);
+        var text = document.getElementById("text");
+        if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+           text.style.display = "none";
+        }
+      }
+      </script>
+      </body>
+      
     <script>
       function workTabs(evt, service){
         var x, tabcontent, tablinks;
