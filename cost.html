@@ -86,25 +86,34 @@
 
       <p>Display some text when the checkbox is checked:</p>
       
-      <label for="myCheck">Checkbox:</label> 
-      <input type="checkbox" id="myCheck" onclick="boxClicker('myCheck')">
+      <label for="myCheck">Express</label> 
+      <input type="checkbox" id="myCheck" onclick="boxClicker('myCheck',400)">
       
-      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+ 
       
-      <label for="myCheck2">Checkbox:</label> 
-      <input type="checkbox" id="myCheck2" onclick="boxClicker('myCheck2')">
-      
-      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+      <label for="myCheck2">Premium</label> 
+      <input type="checkbox" id="myCheck2" onclick="boxClicker('myCheck2',755)">
+
+      <label for="myCheck3">Executive</label> 
+      <input type="checkbox" id="myCheck3" onclick="boxClicker('myCheck3',499999.99)">
+      <p id="text" style="display:none" style="display: inline;">Final Price: $<span id="myParagraph"></span></p>
       <script>
-      function boxClicker(element) {
+      var finalCost = 0
+      function boxClicker(element,cost) {
         var checkBox = document.getElementById(element);
-        var text = document.getElementById("text");
+        var fP = document.getElementById("text");
+        var costly = document.getElementById(cost)
         if (checkBox.checked == true){
-          text.style.display = "block";
+          fP.style.display = "block";
+          finalCost += cost;
         } else {
-           text.style.display = "none";
+           finalCost -= cost;
         }
-      }
+      var myVariable = finalCost;
+      var myParagraph = document.getElementById("myParagraph");
+      myParagraph.innerHTML = myVariable;
+      }    
+
       </script>
       </body>
       
