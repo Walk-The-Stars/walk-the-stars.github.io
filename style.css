@@ -481,7 +481,7 @@ hr {
 	content: "";
 	position: absolute;
 	width: 50%;
-	border: solid orangered;
+	border: solid #8044c4;
   }
   
   /* Setting the border of top, bottom, left */
@@ -524,15 +524,15 @@ hr {
   .info {
 	display: flex;
 	flex-direction: column;
-	background: #333;
-	color: gray;
+	background: #effdb1;;
+	color: #140959;
 	border-radius: 10px;
 	padding: 10px;
   }
   
   /* Title of the card */
   .titlecard {
-	color: orangered;
+	color: #8044c4;
 	position: relative;
   }
   
@@ -544,7 +544,7 @@ hr {
 	height: 10px;
 	background: white;
 	border-radius: 999px;
-	border: 3px solid orangered;
+	border: 3px solid #8044c4;
   }
   
   /* text right if the card is even  */
