@@ -554,16 +554,16 @@ hr {
   }
   
   /* text right if the card is even  */
-  .card:nth-child(even) > .info > .title {
+  .card:nth-child(even) > .info > .titlecard {
 	text-align: right;
   }
   
   /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
+  .card:nth-child(odd) > .info > .titlecard::before {
 	left: -45px;
   }
   
   /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
+  .card:nth-child(even) > .info > .titlecard::before {
 	right: -45px;
   }
