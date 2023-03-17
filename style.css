@@ -537,10 +537,7 @@ hr {
   }
   
   /* Title of the card */
-  .title {
-	color: orangered;
-	position: relative;
-  }
+
   
   /* Timeline dot  */
   .title::before {
