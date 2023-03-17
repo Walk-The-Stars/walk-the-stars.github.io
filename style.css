@@ -537,8 +537,21 @@ hr {
   }
   
   /* Title of the card */
-
+  .titlecard {
+	color: orangered;
+	position: relative;
+  }
   
+  /* Timeline dot  */
+  .titlecard::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 999px;
+	border: 3px solid orangered;
+  }
   
   /* text right if the card is even  */
   .card:nth-child(even) > .info > .title {
