@@ -663,6 +663,7 @@ hr {
 	}
   }
 .priceHeader{
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
+	font-style: bold;
 }
