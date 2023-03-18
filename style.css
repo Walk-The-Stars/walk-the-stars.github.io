@@ -610,4 +610,59 @@ hr {
 		display: block;
 	}
   }
-/* Css for testimonials */
+/* End of Css for testimonials */
+
+/* Css for priceConfigurator boxes */
+
+.priceColumns {
+	float: left;
+	width: 33.3%;
+	padding: 8px;
+	box-sizing: border-box;
+  
+  }
+  
+  .tierPrice {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  }
+  
+  .tierPrice:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .tierPrice .tops {
+	background-color: #111;
+	font-size: 25px;
+	color: white;
+  }
+  
+  .tierPrice li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .tierPrice .grey {
+	background-color: #eee;
+	font-size: 20px;
+  }
+  .tierPrice .greyish {
+	background-color: #585858;
+	font-size: 20px;
+	color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+	.priceColumns {
+	  width: 100%;
+	}
+  }
+.priceHeader{
+	font-size: 20px;
+	text-align: center;
+}

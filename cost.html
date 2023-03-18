@@ -60,7 +60,7 @@
         </div>
         <div class="event">
           <p>The premium package offers a great middle ground for those who are looking to experience the luxuries that many astronauts experience for space without breaking the bank. The premium package starts at $299,999.99 USD. </p>
-          <p>This package includes all of the same amenities as the express package, as well as a central commons area with recreational activities, individual rooms for passengers with climate control and computers, leather seating arrangements for launch, as well as individual spacewalks.</p>
+          <p>This package includes all of the same amenities as the express package, as well as a central commons area with recreational activities, individual rooms for passengers with climate control and computers, leather seating arrangements for launch, as well as 2 individual spacewalks.</p>
           <p>For the training course, the premium package includes the standard course, a refresher course, as well as being able to meet the captain and crew who will be with you on your journey. </p>
         </div>
       </div>
@@ -84,20 +84,43 @@
     <h2>Price Configurator</h2> 
     <body>
 
-      <p>Display some text when the checkbox is checked:</p>
-      
-      <label for="myCheck">Express</label> 
-      <input type="checkbox" id="myCheck" onclick="boxClicker('myCheck',400)">
-      
- 
-      
-      <label for="myCheck2">Premium</label> 
-      <input type="checkbox" id="myCheck2" onclick="boxClicker('myCheck2',755)">
+      <p id="text" style="display:none" style="display: inline;" class="priceHeader">Final Price: $<span id="myParagraph"></span></p>
+      <div class="priceColumns">
+        <ul class="tierPrice">
+          <li class="tops"> <label for="myCheck1">Express</label><input type="checkbox" id="myCheck1" onclick="boxClicker('myCheck1',199999.99)"> </li>
+          <li class="greyish">Additonal Options</li>
+          <li class="grey"> <label for="myCheck1.1">Refresher Course and Crew Meeting</label><input type="checkbox" id="myCheck1.1" onclick="boxClicker('myCheck1.1',150)"> </li>
+          <li class="grey"> <label for="myCheck1.2">Enhanced Launch Package</label><input type="checkbox" id="myCheck1.2" onclick="boxClicker('myCheck1.2',300)"> </li>
+          <li class="grey"> <label for="myCheck1.3">Extra Spacewalk (2)</label><input type="checkbox" id="myCheck1.3" onclick="boxClicker('myCheck1.3',10000)"> </li>
+          <li class="grey"> <label for="myCheck1.4">Indivdual Spacewalks</label><input type="checkbox" id="myCheck1.4" onclick="boxClicker('myCheck1.4',20000)"> </li>
+          <li class="grey"> <label for="myCheck1.5">Individual Rooms</label><input type="checkbox" id="myCheck1.5" onclick="boxClicker('myCheck1.5',10000)"> </li>
+        </ul>
+      </div>
 
-      <label for="myCheck3">Executive</label> 
-      <input type="checkbox" id="myCheck3" onclick="boxClicker('myCheck3',499999.99)">
+      <div class="priceColumns">
+        <ul class="tierPrice">
+          <li class="tops"> <label for="myCheck2">Premium</label><input type="checkbox" id="myCheck2" onclick="boxClicker('myCheck2',299999.99)"> </li>
+          <li class="greyish">Additonal Options</li>
+          <li class="grey"> <label for="myCheck2.1">Advanced Data Communications Package</label><input type="checkbox" id="myCheck2.1" onclick="boxClicker('myCheck2.1',1000)"> </li>
+          <li class="grey"> <label for="myCheck2.2">Access to Live Performances</label><input type="checkbox" id="myCheck2.2" onclick="boxClicker('myCheck2.2',300)"> </li>
+          <li class="grey"> <label for="myCheck2.3">Extra Spacewalk (3)</label><input type="checkbox" id="myCheck2.3" onclick="boxClicker('myCheck2.3',10000)"> </li>
+          <li class="grey">Individual Spacewalks Included</li>
+          <li class="grey">Individual Rooms Included</li>
+        </ul>
+      </div>
+
+      <div class="priceColumns">
+        <ul class="tierPrice">
+          <li class="tops"> <label for="myCheck3">Executive</label><input type="checkbox" id="myCheck3" onclick="boxClicker('myCheck3',499999.99)"> </li>
+          <li class="greyish">No additonal options are available at this time</li>
+          <li class="grey">Exclusive Rooms and Amenities</li>
+          <li class="grey">Access to live Performances Included</li>
+          <li class="grey">3 Spacewalks Included</li>
+          <li class="grey">Individual Spacewalks Included</li>
+          <li class="grey">Executive Room Package Included</li>
+        </ul>
+      </div>
       
-      <p id="text" style="display:none" style="display: inline;">Final Price: $<span id="myParagraph"></span></p>
       <script>
       var finalCost = 0
       function boxClicker(element,cost) {
