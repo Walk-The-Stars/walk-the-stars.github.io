@@ -556,6 +556,10 @@ hr {
   .card:nth-child(even) > .info > .titlecard {
 	text-align: right;
   }
+
+  .card:nth-child(odd) > .info > .titlecard {
+	text-align: left;
+  }
   
   /* setting dot to the left if the card is odd */
   .card:nth-child(odd) > .info > .titlecard::before {
