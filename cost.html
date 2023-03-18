@@ -123,14 +123,32 @@
       
       <script>
       var finalCost = 0
-      function boxClicker(element,cost) {
-        var checkBox = document.getElementById(element);
-        var fP = document.getElementById("text");
-        var costly = document.getElementById(cost)
+    function boxClicker(element, cost) {
+      var checkBox = document.getElementById(element);
+      var fP = document.getElementById("text");
+ 
+      // get the parent column of the clicked checkbox
+      var parentColumn = checkBox.closest('.priceColumns');
+  
+      // get all checkboxes in the same column as the clicked checkbox
+      var checkboxesInColumn = parentColumn.querySelectorAll('input[type="checkbox"]');
+  
+      // uncheck other checkboxes
+      var allColumns = document.querySelectorAll('.priceColumns');
+      allColumns.forEach(function(column) {
+        if (column !== parentColumn) {
+          var checkboxesInOtherColumn = column.querySelectorAll('input[type="checkbox"]');
+          checkboxesInOtherColumn.forEach(function(checkbox) {
+            checkbox.checked = false;
+          });
+        }
+      });
+
         if (checkBox.checked == true){
           fP.style.display = "block";
           finalCost += cost;
-        } else {
+        }
+         else {
            finalCost -= cost;
         }
       var myVariable = finalCost;
